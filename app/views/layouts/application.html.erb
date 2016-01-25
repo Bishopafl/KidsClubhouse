@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kidsclub</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- Change this to match a nav bar setup -->
+	<h1>Kids' Clubhouse Inc.</h1>
+
+	<div class="nav">
+		<ul>
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/preschool-info">Preschool Information</a>
+			</li>
+			<li>
+				<a href="/afterschool-info">After-school Information</a>
+			</li>
+			<li>
+				<a href="">Monthly Menu</a>
+			</li>
+			<li>
+				<a href="/contact">Contact Us!</a>
+			</li>
+		</ul>
+	</div>
+
+
+<%= yield %>
+
+<br>
+	<footer>
+		<div>
+			Location
+		</div>
+		<div>
+			4901 North Habana Avenue<br>
+			Tampa, Florida 33614<br>
+			Telephone: 813-876-7151<br>
+			Fax: 813-414-0920
+		</div>
+	</footer>
+
+</body>
+</html>
